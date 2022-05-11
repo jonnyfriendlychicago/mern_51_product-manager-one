@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 // ! import all components
 import EntFormCmp from './components/EntFormCmp';
+import ProductFormCmp from './components/ProductFormCmp';
+
 // ! import required react-bootstrap items 
 import {Card} from 'react-bootstrap';
 import React,  {useState} from 'react'; // added this line
@@ -15,7 +17,7 @@ function App() {
       <div className="header_content"> 
           <div className="header_content_vert_left"> 
               <a href="#" className="header_home_link" >
-                  <h1 >Sitename</h1>
+                  <h1>Product Manager</h1>
                   <h2>Feel the love.</h2>
               </a>
           </div>
@@ -30,17 +32,20 @@ function App() {
       </div>
     </header>
     <main className="row_flex_center_top ">
+      {/* <div className="row_left" id="toDoApp">
+        <Card id="taskInputForm" style = {{ width: "800px", padding: "10px", border: "2px solid black"}}>
+          
+          <EntFormCmp />
+
+        </Card>
+      </div> */}
       <div className="row_left" id="toDoApp">
-          <Card id="taskInputForm" style = {{ width: "800px", padding: "10px", border: "2px solid black"}}>
-            
-            <EntFormCmp />
+        <Card id="taskInputForm" style = {{ width: "800px", padding: "10px", border: "2px solid black"}}>
+          
+          <ProductFormCmp />
 
-          </Card>
-        </div>
-      
-
-      
-
+        </Card>
+      </div>
     </main>
     </>
   );
